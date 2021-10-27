@@ -1,0 +1,110 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/titre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/meteoTitle"
+            android:textSize="32dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/dateSaisie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateSaisie"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:layout_marginTop="50dp"/>
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:datePickerMode="calendar" />
+
+        <TextView
+            android:id="@+id/heureSaisie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/heureSaisie"
+            android:textSize="20dp"
+            android:gravity="left"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="clock" />
+
+        <TextView
+            android:id="@+id/tempSaisie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tempSaisie"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/vitesseventSaisie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vitesseventSaisie"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/vitesseVent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/cielSaisie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cielSaisie"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/cielSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/cielSpinner"
+            android:layout_marginBottom="50dp"/>
+
+        <Button
+            android:id="@+id/btnEnvoyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/btnEnvoyer"
+            android:layout_marginBottom="100dp"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

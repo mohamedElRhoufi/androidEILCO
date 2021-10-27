@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repasTitle"
+        android:textSize="32dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/entreeText"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/entreeText"
+        android:layout_below="@id/titre"
+        />
+
+    <EditText
+        android:id="@+id/platTexte"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/platText"
+        android:layout_below="@id/entreeText"
+        />
+
+    <TextView
+        android:id="@+id/textCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textCheckbox"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/platTexte" />
+
+    <CheckBox
+        android:id="@+id/checkbox_fromage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fromage"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/textCheckbox" />
+
+    <CheckBox
+        android:id="@+id/checkbox_fruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fruit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/textCheckbox"
+        android:layout_toRightOf="@id/checkbox_fromage" />
+
+
+    <TextView
+        android:id="@+id/textJournee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textJournee"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/checkbox_fruit" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textJournee">
+
+
+    <RadioButton android:id="@+id/radio_midi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/radio_midi"
+        />
+
+    <RadioButton android:id="@+id/radio_soir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/radio_soir"
+        android:layout_toRightOf="@id/radio_midi"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="@string/btnValider"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnAnnuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="@string/btnAnnuler"
+        android:layout_below="@id/btnValider"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

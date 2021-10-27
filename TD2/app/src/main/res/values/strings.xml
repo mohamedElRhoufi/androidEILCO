@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TD2</string>
+    <string name="message">Salut les BG</string>
+    <string name="repasTitle">Saisie de repas : </string>
+    <string name="entreeText">Votre entrée </string>
+    <string name="platText">Votre plat principal</string>
+    <string name="fromage">Fromage</string>
+    <string name="fruit">Fruit</string>
+    <string name="textCheckbox">Cocher si vous en avez pris :</string>
+    <string name="radio_midi">Midi</string>
+    <string name="radio_soir">Soir</string>
+    <string name="textJournee">Quand avez vous mangé ?</string>
+    <string name="btnValider">Valider</string>
+    <string name="btnAnnuler">Annuler</string>
+    <string name="meteoTitle">Saisie météo : </string>
+    <string name="dateSaisie">Renseignez la date : </string>
+    <string name="heureSaisie">Renseignez l\'heure : </string>
+    <string name="tempSaisie">Renseignez la température (°C) : </string>
+    <string name="vitesseventSaisie"> Renseignez la vitesse du vent (km/h) :</string>
+    <string name="cielSaisie"> Renseignez l\'état du ciel : </string>
+    <string name="btnEnvoyer">Envoyer les saisies</string>
+
+
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="cielSpinner">
+        <item>Dégagé</item>
+        <item>Couvert</item>
+        <item>Pluvieux</item>
+    </string-array>
+</resources>
