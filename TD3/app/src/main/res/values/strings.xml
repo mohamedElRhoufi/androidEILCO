@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TD3</string>
+    <string name="texteDuBouton">Lancer de dé</string>
+    <string name="output"></string>
+</resources>
