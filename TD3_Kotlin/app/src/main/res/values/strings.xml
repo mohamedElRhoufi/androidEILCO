@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TD3</string>
+    <string name="texteDuBouton">Lancer de dé</string>
+    <string name="output"></string>
+    <string name="inputText">Saisir le nombre de face souhaité</string>
+    <string name="txtFaces">Nombre de faces : </string>
+</resources>
