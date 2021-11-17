@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewsList</string>
+    <string name="textLogin1">Bienvenue sur la page de connexion</string>
+    <string name="txtNews">Bienvenue sur la page des news</string>
+    <string name="texteDuBouton">Login</string>
+    <string name="btnNews">News</string>
+    <string name="inputText">Inserez votre login</string>
+    <string name="txtNews2">Bonjour </string>
+    <string name="btngoToDetails">Détails</string>
+    <string name="btngoToNews">Ok</string>
+</resources>
