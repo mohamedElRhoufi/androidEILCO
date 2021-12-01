@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TD6</string>
+    <string name="titrePage">Nom de l\'utilisateur GitHub : </string>
+    <string name="btnRechercher">Rechercher</string>
+    <string name="btnRetour">Retour</string>
+</resources>
+
