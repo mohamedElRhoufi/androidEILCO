@@ -13,6 +13,10 @@ class FormActivity : AppCompatActivity() {
         setContentView(R.layout.activity_form)
 
 
+
+        /*
+               GESTION COMPTE GITHUB
+         */
         // quand un utilisateur clique sur le bouton :
         val btnRecherche = findViewById<Button>(R.id.btnRechercher)
         btnRecherche.setOnClickListener{
@@ -29,6 +33,23 @@ class FormActivity : AppCompatActivity() {
             }
         }
 
+        /*
+               GESTION REPO GITHUB
+         */
+        val btnRecherche2 = findViewById<Button>(R.id.btnRechercher2)
+        btnRecherche2.setOnClickListener{
+            // récupération de la valeur entrée dans l'edittext :
+            val editText2 = findViewById<EditText>(R.id.edittxt2)
+            val entree2 = editText2.getText().toString()
+            if(entree2!=null){ // si il y a quelque chose d'écrit, on essaie :
+                // on envoie l'entrée dans l'autre activité :
+                Toast.makeText(this, "Recherche pour " + entree2 + " en cours.", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, RepoActivity::class.java)
+                intent.putExtra("entree", entree2) // le nom de l'utilisateur entré
+                startActivity(intent)
+                finish() // on termine l'activité
+            }
+        }
 
     }
 }

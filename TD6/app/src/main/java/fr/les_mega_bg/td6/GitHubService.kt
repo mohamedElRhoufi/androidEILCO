@@ -17,7 +17,7 @@ interface GitHubService {
     fun listRepos(@Path("user") user: String?): Call<List<Repo>>
 
     @GET("/search/repositories")
-    fun searchRepos(@Query("q") query: String?): Call<List<Repo>>
+    fun searchRepos(@Query("q") query: String?): Call<Repos>
 
 
 

@@ -30,4 +30,31 @@
             android:layout_height="wrap_content"
             android:text="@string/btnRechercher"
             android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/titreRecherche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titreRecherche"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            />
+
+        <EditText
+            android:id="@+id/edittxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btnRechercher2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnRechercher"
+            android:gravity="center"/>
+
+
+
+
 </LinearLayout>

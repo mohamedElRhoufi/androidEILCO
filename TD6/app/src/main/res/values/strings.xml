@@ -3,5 +3,7 @@
     <string name="titrePage">Nom de l\'utilisateur GitHub : </string>
     <string name="btnRechercher">Rechercher</string>
     <string name="btnRetour">Retour</string>
+    <string name="titreRecherche">Recherche repo GitHub : </string>
+
 </resources>
 
