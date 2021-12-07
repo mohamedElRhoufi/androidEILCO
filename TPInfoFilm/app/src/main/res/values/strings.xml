@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TP-InfoFilm</string>
+    <string name="btnPopular">Populaire</string>
+    <string name="btnUpcoming">Prochainement</string>
 </resources>

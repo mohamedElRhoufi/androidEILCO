@@ -18,8 +18,15 @@ class LoginActivity : Activity() {
 
         btn.setOnClickListener(){
             val editText = findViewById<EditText>(R.id.inputText)
+
+            // Utilisation du contexte d'application
+            val app = (applicationContext as NewsListApplication)
+            app.login = editText.getText().toString();
+
+            // Utilisation des extras d'intents
             val intent = Intent(this,NewsActivity::class.java)
             intent.putExtra("login",editText.text.toString())
+            
             startActivity(intent)
             finish()
         }

@@ -16,6 +16,7 @@ class NewsActivity : Activity() {
 
 
         //récupération de données
+
         if(intent.hasExtra("login")){
             val login = intent.getStringExtra("login")
             var output = findViewById<TextView>(R.id.txtNews2)
