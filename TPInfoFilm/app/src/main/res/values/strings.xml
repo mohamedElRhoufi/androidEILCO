@@ -2,4 +2,7 @@
     <string name="app_name">TP-InfoFilm</string>
     <string name="btnPopular">Populaire</string>
     <string name="btnUpcoming">Prochainement</string>
+    <string name="title_activity_accueil">AccueilActivity</string>
+    <string name="title_popular">Popular</string>
+    <string name="title_upcoming">Upcoming</string>
 </resources>

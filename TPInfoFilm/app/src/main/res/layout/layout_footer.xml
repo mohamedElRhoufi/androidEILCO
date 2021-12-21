@@ -4,22 +4,21 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="20dp"
+    android:background="@color/purple_500"
     >
 
     <Button
         android:id="@+id/btnPopular"
         android:layout_width="0dp"
         android:layout_weight="0.5"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:text="@string/btnPopular"
         android:gravity="center"/>
     <Button
         android:id="@+id/btnUpcoming"
         android:layout_width="0dp"
         android:layout_weight="0.5"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:text="@string/btnUpcoming"
         android:gravity="center"/>
 
