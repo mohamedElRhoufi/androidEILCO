@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
        val btn = findViewById<Button>(R.id.ButtonDesc)
      if(btn!=null){ btn.setOnClickListener() {
-     Toast.makeText(this, "ceci est un film", Toast.LENGTH_SHORT).show()
+     //Toast.makeText(this, "ceci est un film", Toast.LENGTH_SHORT).show()
        }}
     }
 

@@ -1,5 +1,7 @@
 package fr.les_mega_bg.tp_infofilm
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
@@ -19,6 +22,8 @@ class FilmAdapter(films : List<Film>) : RecyclerView.Adapter<FilmAdapter.ViewHol
         val dateTextview : TextView = view.findViewById(R.id.affichageDate)
         val imageImageView : ImageView = view.findViewById(R.id.affichageImage)
         val btnView : Button = view.findViewById(R.id.ButtonDesc)
+
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -26,11 +31,14 @@ class FilmAdapter(films : List<Film>) : RecyclerView.Adapter<FilmAdapter.ViewHol
         val inflater = LayoutInflater.from(context)
 
         val contactView = inflater.inflate(R.layout.layout_item_film, parent, false)
-        return ViewHolder(contactView
-        )
+
+        return ViewHolder(contactView)
+
+
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
         val film : Film = mFilms.get(position)
         var titreTextView = holder.titreTextview
         titreTextView.setText(film.original_title.toString())
@@ -43,7 +51,8 @@ class FilmAdapter(films : List<Film>) : RecyclerView.Adapter<FilmAdapter.ViewHol
 
         var btn= holder.btnView
         btn.setOnClickListener(){
-            Toast.makeText(holder.itemView.context, "ceci est un film", Toast.LENGTH_SHORT).show()
+            launchDescScreen(holder.itemView.context,film)
+            Toast.makeText( holder.itemView.context,"c'est " + film.original_title.toString(),  Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -51,4 +60,12 @@ class FilmAdapter(films : List<Film>) : RecyclerView.Adapter<FilmAdapter.ViewHol
         return mFilms.size
     }
 
+    fun launchDescScreen(context: Context,film:Film){
+        val intent = Intent(context, DescriptionActivity::class.java)
+        intent.putExtra("EXTRA_FILM", film)
+        context.startActivity(intent)
+
+
+
+    }
 }

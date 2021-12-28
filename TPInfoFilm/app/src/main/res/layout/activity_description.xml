@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/donneeFilm"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="20dp"
+    >
+    <TextView
+        android:id="@+id/affichageTitre"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:hint="titre" />
+    <TextView
+        android:id="@+id/affichageDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/affichageTitre"
+        android:hint="date" />
+
+
+    <ImageView
+        android:id="@+id/affichageImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/affichageDescription"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="48dp"
+        tools:src="@drawable/ic_launcher_background"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/affichageDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/affichageDate"
+        android:hint="resume" />
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

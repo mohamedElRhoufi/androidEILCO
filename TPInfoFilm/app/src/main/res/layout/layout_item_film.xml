@@ -16,7 +16,8 @@
         android:layout_height="0dp"
         android:alpha="0"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="118dp" />
 
     <TextView

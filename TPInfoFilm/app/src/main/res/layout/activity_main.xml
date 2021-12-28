@@ -9,14 +9,12 @@
     >
 
 
-
-
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/rvFilms"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"/>
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvFilms"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp" />
 
     <!-- <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
