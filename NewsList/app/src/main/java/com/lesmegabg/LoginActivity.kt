@@ -26,7 +26,7 @@ class LoginActivity : Activity() {
             // Utilisation des extras d'intents
             val intent = Intent(this,NewsActivity::class.java)
             intent.putExtra("login",editText.text.toString())
-            
+
             startActivity(intent)
             finish()
         }

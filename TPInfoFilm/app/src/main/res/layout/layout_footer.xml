@@ -14,6 +14,7 @@
         android:layout_height="100dp"
         android:text="@string/btnPopular"
         android:gravity="center"/>
+
     <Button
         android:id="@+id/btnUpcoming"
         android:layout_width="0dp"
@@ -22,6 +23,13 @@
         android:text="@string/btnUpcoming"
         android:gravity="center"/>
 
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="100dp"
+        android:text="@string/btnSearch"
+        android:gravity="center"/>
 
 
 

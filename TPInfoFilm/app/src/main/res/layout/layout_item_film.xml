@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/donneeFilm"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="300dp"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_marginLeft="10dp"
@@ -21,31 +21,36 @@
         tools:layout_editor_absoluteY="118dp" />
 
     <TextView
-            android:id="@+id/affichageTitre"
-            android:layout_width="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_height="wrap_content"
-            android:hint="titre" />
-        <TextView
-            android:id="@+id/affichageDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/affichageTitre"
-            android:hint="date" />
+        android:id="@+id/affichageTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="titre"
+        android:lines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/affichageDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/affichageTitre" />
 
     <ImageView
         android:id="@+id/affichageImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="@+id/ButtonDesc"
+        app:layout_constraintStart_toStartOf="@+id/ButtonDesc"
         app:layout_constraintTop_toBottomOf="@id/affichageDate"
-
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="48dp"
-        tools:src="@drawable/ic_launcher_background"
         tools:ignore="MissingConstraints"
-        android:contentDescription="TODO" />
+        tools:src="@drawable/ic_launcher_background" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

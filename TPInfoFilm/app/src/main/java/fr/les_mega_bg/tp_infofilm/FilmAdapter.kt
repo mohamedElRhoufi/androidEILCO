@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 
 class FilmAdapter(films : List<Film>) : RecyclerView.Adapter<FilmAdapter.ViewHolder>(){
 
@@ -47,7 +48,9 @@ class FilmAdapter(films : List<Film>) : RecyclerView.Adapter<FilmAdapter.ViewHol
         dateTextView.setText(film.release_date.toString())
 
         // image
-        Glide.with(holder.imageImageView).load("https://image.tmdb.org/t/p/w500"+film.poster_path).fitCenter().into(holder.imageImageView)
+        Glide.with(holder.imageImageView).load("https://image.tmdb.org/t/p/w500"+film.poster_path).apply(
+            RequestOptions().override(200,600)).into(holder.imageImageView)
+
 
         var btn= holder.btnView
         btn.setOnClickListener(){

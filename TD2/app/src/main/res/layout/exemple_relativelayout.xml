@@ -21,19 +21,23 @@
         android:layout_toLeftOf="@id/button1"
         android:layout_alignTop="@id/button1"
         android:layout_alignBottom="@id/button1"/>
+
     <Button
-        android:id="@+id/button4" android:text="BTN4"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/button3"
         android:layout_alignLeft="@id/button3"
-        android:layout_alignRight="@id/button1"/>
+        android:layout_alignRight="@id/button1"
+        android:text="BTN4" />
+
     <Button
-        android:id="@+id/button5" android:text="BTN5"
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/button1"
         android:layout_alignTop="@id/button1"
-        android:layout_alignBottom="@id/button4"/>
+        android:layout_alignBottom="@id/button4"
+        android:layout_toRightOf="@id/button1"
+        android:text="BTN5" />
 
 </RelativeLayout>
